@@ -66,10 +66,17 @@ Intern @ ApexPlanet Software Pvt. Ltd.
 
 ## 📸 Screenshots
 
-🔹 **Weather App Section**  
-🔹 **Quiz Section**  
-🔹 **Image Carousel Section**
+🔹 **Weather App Section**
 
+  ![Weather Screenshot](weather_api.png) 
+  
+🔹 **Quiz Section**  
+   
+  ![Quiz Screenshot](quiz.png)
+  
+🔹 **Image Carousel Section**
+  
+  ![Image Carousel Screenshot](imagecarousel.png)
   
 ---
 
