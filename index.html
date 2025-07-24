@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Interactive Web Experience</h1>
+            <p>Responsive Design • Interactive Features • Live Data</p>
+        </div>
+
+        <div class="tab-navigation">
+            <button class="tab-btn active" onclick="switchTab('weather')">🌤️ Live Weather</button>
+            <button class="tab-btn" onclick="switchTab('quiz')">🧠 Quiz Challenge</button>
+            <button class="tab-btn" onclick="switchTab('carousel')">🖼️ Image Carousel</button>
+        </div>
+
+        <!-- Weather Tab -->
+        <div class="tab-content active" id="weather-tab">
+            <div class="card weather-card">
+                <h2>🌤️ Live Weather Data</h2>
+                <input type="text" class="city-input" placeholder="Enter city name..." value="London">
+                <button class="btn" onclick="fetchWeather()">Get Weather</button>
+                
+                <div class="weather-info" id="weatherInfo">
+                    <div class="temperature" id="temperature">--°</div>
+                    <div id="description">--</div>
+                    <div class="weather-details">
+                        <div class="weather-detail">
+                            <div><strong>Feels Like</strong></div>
+                            <div id="feelsLike">--°</div>
+                        </div>
+                        <div class="weather-detail">
+                            <div><strong>Humidity</strong></div>
+                            <div id="humidity">--%</div>
+                        </div>
+                        <div class="weather-detail">
+                            <div><strong>Wind Speed</strong></div>
+                            <div id="windSpeed">-- m/s</div>
+                        </div>
+                        <div class="weather-detail">
+                            <div><strong>Pressure</strong></div>
+                            <div id="pressure">-- hPa</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz Tab -->
+        <div class="tab-content" id="quiz-tab">
+            <div class="card quiz-container">
+                <h2>🧠 Knowledge Quiz Challenge</h2>
+                <div id="quizContent">
+                    <div class="question" id="question">Loading question...</div>
+                    <div class="answers" id="answers"></div>
+                    <button class="btn" id="nextBtn" onclick="nextQuestion()" style="display: none;">Next Question</button>
+                </div>
+                
+                <div class="quiz-result" id="quizResult">
+                    <div class="score" id="finalScore">0/0</div>
+                    <p>Great job! Thanks for playing!</p>
+                    <button class="btn" onclick="restartQuiz()">Play Again</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Tab -->
+        <div class="tab-content" id="carousel-tab">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slides" id="carouselSlides">
+                        <div class="carousel-slide">
+                            <div>
+                                <h3>🌟 Welcome to Our Interactive Experience</h3>
+                                <p>Discover amazing features with responsive design</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div>
+                                <h3>🌤️ Real-time Weather Data</h3>
+                                <p>Get live weather updates for any city worldwide</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div>
+                                <h3>🧠 Interactive Knowledge Quiz</h3>
+                                <p>Test your knowledge with our dynamic quiz system</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div>
+                                <h3>📱 Fully Responsive Design</h3>
+                                <p>Perfect experience on desktop, tablet, and mobile</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div>
+                                <h3>🚀 Modern Web Technologies</h3>
+                                <p>Built with HTML5, CSS3, and JavaScript ES6+</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-arrow prev" onclick="previousSlide()">‹</button>
+                    <button class="carousel-arrow next" onclick="nextSlide()">›</button>
+                    
+                    <div class="carousel-nav" id="carouselNav"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
