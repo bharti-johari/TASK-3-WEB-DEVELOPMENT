@@ -60,7 +60,8 @@ Intern @ ApexPlanet Software Pvt. Ltd.
 ---
 
 ## 🚀 Live Demo  
-🔗 [Click here to view the live project]() 
+🔗 [Click here to view the live project](https://bharti-johari.github.io/TASK-3-WEB-DEVELOPMENT/)
+
 
 ---
 
